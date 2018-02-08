@@ -1,0 +1,17 @@
+Package: AdaptixR
+Type: Package
+Title: A toolkit to interact with Sensewaves' Adaptix platform API
+Version: 0.1.0
+Author: Sensewaves
+Maintainer: Sensewaves Tech team <tech@sensewaves.io>
+Description: This package provides a set of functions that are wrappers around API functionality of the Adaptix platform.
+    Use four spaces when indenting paragraphs within the Description.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.3.2)
+LazyData: true
+Depends: 
+  httr (>= 1.2.1), 
+  rjson (>= 0.2.15),
+  xts (>= 0.9-7)
+RoxygenNote: 6.0.1
