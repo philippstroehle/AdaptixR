@@ -59,8 +59,13 @@ AdaptixGetPoints(conn = conn, stream = my.new.stream$id)
 
 ##### Analyze data
 ```r
-# request a forecast
-forecast <- AdaptixForecast(conn = conn, stream = my.new.stream$id, span = "24h")
-# ...
+# Request a forecast for the next 48h on our stream
+forecast.response <- AdaptixForecast(conn = conn, stream = my.new.stream$id, span = "48h")
+# Parse forecasted scenarios
+AdaptixForecastPointsToDataFrame(AdaptixGetForecastScenarios(forecast.response))
+#       1         at
+# 1 43.00 2017-01-05
+# 2 28.25 2017-01-06
+# 	...
 ```
 
