@@ -28,7 +28,7 @@ library(AdaptixR)
 
 
 ```r
-conn <- AdaptixConnection(url = "https://alpha.adaptix.io/api", api.key = "your_adaptix_key")
+conn <- AdaptixConnect(url = "https://alpha.adaptix.io/api", api.key = "your_adaptix_key")
 ```
 
 ##### Push data
